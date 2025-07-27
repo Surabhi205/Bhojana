@@ -21,7 +21,8 @@ body {
 }
 
 .home .background-image {
-    background: url('images/flying-spices.jpeg') no-repeat center center / cover;
+    background: url('flying-spices.jpeg') no-repeat center center / cover;
+    /* ↑ removed 'images/' from path */
     position: absolute;
     top: 0; left: 0;
     width: 100%;
