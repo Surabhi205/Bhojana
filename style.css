@@ -1,0 +1,183 @@
+/* === RESET & GLOBAL === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffefb;
+    color: #1e1208;
+}
+
+/* === HOME SECTION === */
+.home {
+    position: relative;
+    background-color: #f4c430; /* Yellow turmeric tone */
+    color: #1e1208; /* Rich dark brown text */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home .background-image {
+    background: url('images/flying-spices.jpeg') no-repeat center center / cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.home-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.home-logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.slogan {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #5a2e0d;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a2e0d;
+}
+
+/* === PRODUCT GRID === */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff8f2;
+    border: 1px solid #f0d4b2;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #4b2e1e;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d2691e;
+    margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* === COMMUNITY JOIN SECTION === */
+.community-section {
+    background: #fff4e6;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    border-top: 2px dashed #d2691e;
+}
+
+.community-section h2 {
+    font-size: 28px;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.community-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.join-group-btn {
+    background-color: #128C7E;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.join-group-btn:hover {
+    background-color: #075E54;
+}
+
+/* === RESPONSIVENESS === */
+@media (max-width: 600px) {
+    .home-logo {
+        width: 150px;
+    }
+    .slogan {
+        font-size: 1rem;
+    }
+    .product-card {
+        width: 90%;
+    }
+}
